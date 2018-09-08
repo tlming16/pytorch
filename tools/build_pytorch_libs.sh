@@ -100,7 +100,7 @@ else
     fi
 fi
 CPP_FLAGS=" -std=c++11 "
-GLOO_FLAGS=""
+GLOO_FLAGS="-DBUILD_TEST=0"
 THD_FLAGS=""
 NCCL_ROOT_DIR=${NCCL_ROOT_DIR:-$INSTALL_DIR}
 if [[ $USE_CUDA -eq 1 ]]; then
